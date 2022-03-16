@@ -1,0 +1,104 @@
+
+/*.container{*/
+/*  display: inline-block;*/
+/*  height: 200px;*/
+/*  width: 200px;*/
+/*  border: 10px solid black;*/
+
+/*}*/
+
+/*.box{*/
+/*  display: inline-block;*/
+/*  height: 200px;*/
+/*  width: 200px;*/
+/*  background-color: #ffcc5c;*/
+/*  transform-origin: bottom right;*/
+/*  transition: transform 0.5s;*/
+/*  pointer-events: none;*/
+/*}*/
+
+/*.container:hover .box{*/
+/*  transform: rotate(60deg);*/
+/*}*/
+
+
+/*-----------------------------toggle bar -----------------------------*/
+/*label {*/
+/*  position: relative;*/
+/*  left: 100px;*/
+/*  top: 100px;*/
+
+/*}*/
+
+/*.btn{*/
+/*  display: inline-block;*/
+/*  height: 60px;*/
+/*  width: 120px;*/
+/*  background: darkgrey;*/
+/*  border-radius: 50px;*/
+/*  transition: background 0.5s ease;*/
+
+/*}*/
+
+
+/*.btn::before{*/
+/*  content: "";*/
+/*  height: 50px;*/
+/*  width: 50px;*/
+/*  position: absolute;*/
+/*  background: lightgrey;*/
+/*  top: -41px;*/
+/*  left: 5px;*/
+/*  border-radius: 40px;*/
+/*  transition: background 0.5s ease, left 0.5s ease;*/
+/*}*/
+/*.btn::after{*/
+/*  content:"off";*/
+/*  height: 50px;*/
+/*  width: 50px;*/
+/*  position: absolute;*/
+/*  top:-41px;*/
+/*  text-align: center;*/
+/*  line-height: 50px;*/
+/*  text-transform: uppercase;*/
+/*  left: 65px;*/
+/*  color: white;*/
+/*  transition: all 0.5s ease;*/
+/*}*/
+
+/*.check{*/
+/*  display: none;*/
+/*}*/
+
+/*.check:checked + .btn{*/
+/*  background: #C39EF9*/
+
+/*}*/
+
+/*.check:checked + .btn::before{*/
+/*  background: rebeccapurple;*/
+/*  left: 65px;*/
+/*}*/
+
+/*.check:checked + .btn::after{*/
+/*  left: 5px;*/
+/*  content:"on";*/
+/*  transition: left 0.5s ease;*/
+/*}*/
+
+/*------------------------------progress bar ----------------------*/
+
+/*.wrapper {*/
+/*  border: 2px solid black;*/
+/*  height: 50px;*/
+/*}*/
+/*.progressBar {*/
+/*  width: 0%;*/
+/*  background: coral;*/
+/*  height: 100%;*/
+/*  transition: width 10s ease-in;*/
+/*}*/
+
+/*.wrapper:hover .progressBar{*/
+/*  width: 99%;*/
+/*}*/
