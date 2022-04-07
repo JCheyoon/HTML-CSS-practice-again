@@ -1,0 +1,66 @@
+@import "default";
+
+$primary-color: #e5e5e5;
+$primary-font: sans-serif, "cursive";
+
+body {
+  background: $primary-color;
+  font-family: $primary-font;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  nav {
+    ul {
+      li {
+        font-size: 1em;
+        &:nth-child(1) {
+          font-size: 3em;
+        }
+        &:nth-child(2) {
+          font-size: 5em;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+//mixins
+
+@mixin transform-mix($prop1, $prop2) {
+  width: $prop1;
+  height: $prop2;
+  background-color: tan;
+  transform: rotate(20deg) scale(1.5);
+}
+
+.transform {
+  @include transform-mix(10px, 10px);
+}
+
+//extend
+
+%extend-border {
+  border: 1px solid red;
+  padding: 10px;
+  color: #1d3c41;
+}
+
+.border {
+  @extend %extend-border;
+}
+
+//Pseudo Selector
+.element {
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: #1d3c41;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+
+
+.container {
+  width: 300px;
+  margin: 0 5%;
+  position: relative;
+  float: left;
+  font-size: 12px;
+  line-height: 2em;
+  padding: 5% 0;
+}
+
+.skill {
+  list-style:none;
+  padding-top:30px;
+}
+
+.skill li {
+  margin-bottom:70px;
+  background:#030303;
+  width: 300px;
+  height:6px;
+
+}
+
+
+
+.blueline {
+  height: 3px;
+  margin: 2px 1px;
+  background: #2187e7;
+  position: absolute;
+}
+
+
+.html        { width:90%;  animation:html 2s ease-out;       }
+.css         { width:95%;  animation:css 2s ease-out;        }
+.typescript   { width:70%;  animation:typescript 2s ease-out; }
+.javascript  { width:50%;  animation:javascript 2s ease-out; }
+.react      { width:30%;  animation:react 2s ease-out;     }
+
+
+@keyframes html        { 0% { width:0px; } 100% { width:90%; }  }
+@keyframes css         { 0% { width:0px; } 100% { width:95%; }  }
+@keyframes typescript  { 0% { width:0px; } 100% { width:70%; }  }
+@keyframes javascript  { 0% { width:0px; } 100% { width:50%; }  }
+@keyframes react     { 0% { width:0px; } 100% { width:30%; }  }
+
